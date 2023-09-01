@@ -87,7 +87,7 @@ def welcome():
     #return render_template('contactus2.html',contact=['text-danger','this form is not submitted yet'])
 
 
-    return render_template('Templates/homepage.html',details=[about_us_array[2]])
+    return render_template('homepage.html',details=[about_us_array[2]])
 
 
 
