@@ -43,7 +43,7 @@ for x in entries:
     #print(object_dict)
     
 
-application=Flask(__name__)
+application=Flask(__name__,template_folder='templates')
 application.config['MAIL_SERVER']='smtp.gmail.com'
 application.config['MAIL_PORT']=465
 application.config['MAIL_USERNAME']='krishchem.fertilizers@gmail.com'
