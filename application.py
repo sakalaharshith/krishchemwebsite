@@ -86,8 +86,23 @@ def welcome():
 
     #return render_template('contactus2.html',contact=['text-danger','this form is not submitted yet'])
 
+    
 
-    return render_template('homepage.html',details=[about_us_array[2]])
+    top5products_entries=client.entries({'content_type':"top5products"})
+    top5=[]
+    for entry in top5products_entries:
+        dictionary={}
+        dictionary['category']=entry.category_name
+        image_asset_top5= entry.fields()['image_url']
+        dictionary['url']=image_asset_top5.url()
+        top5.append(dictionary)
+    
+    
+        
+
+       
+    print('the list of top5 products are',top5)
+    return render_template('homepage.html',details=[about_us_array[2],top5])
 
 
 
@@ -224,4 +239,4 @@ def main():
 
 
 if __name__=='__main__':
-      application.run(host='0.0.0.0') 
+    application.run(debug=True) 
