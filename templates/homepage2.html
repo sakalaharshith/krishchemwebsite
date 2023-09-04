@@ -46,6 +46,13 @@ to{transform:translate(0rem,-13rem);}
 
 
 
+@keyframes example1 {
+ to
+ {
+ transform: rotate(3600deg);
+ }
+}
+
 
 .dropdown:hover .dropdown-menu{
     display: flex;
@@ -78,20 +85,12 @@ to{transform:translate(0rem,-13rem);}
   display:flex;
   justify-content:center;
   align-items:center;
- 
+  
 }
-
-
 .loading-icon
 {
 animation-name: example1;
   animation-duration: 30s;
-}
-@keyframes example1 {
- to
- {
- transform: rotate(3600deg);
- }
 }
 
 
@@ -99,26 +98,26 @@ animation-name: example1;
     </style>
   </head>
   <body>
-    <div class="spinner-wrapper">
-      <img class="loading-icon" src="https://lh3.googleusercontent.com/drive-viewer/AITFw-w2KHevz3CxcaBxrWeAa2Er8GL8AlOzeEc6Cp_sLDtMtYGK3sxGxKmVCx4kax7WC9mC-bkShJoL4Uk2qGzkjU2GVvrm=s1600"
-       style='height:5rem; width:5rem;' class="rounded-circle" alt=""/>
-      </div>
-      
-      <script>
-      
-        const spinnerwrapper=document.querySelector('.spinner-wrapper')
-        window.addEventListener('load',()=>{
-          setTimeout(()=>
-          {
-            spinnerwrapper.style.opacity='0';
-            spinnerwrapper.style.display='none';
-          },2000);
-          
-         
-        });
-        
-      
-      </script>
+<div class="spinner-wrapper">
+<img class="loading-icon" src="https://lh3.googleusercontent.com/drive-viewer/AITFw-w2KHevz3CxcaBxrWeAa2Er8GL8AlOzeEc6Cp_sLDtMtYGK3sxGxKmVCx4kax7WC9mC-bkShJoL4Uk2qGzkjU2GVvrm=s1600"
+ style='height:5rem; width:5rem;' class="rounded-circle" alt=""/>
+</div>
+
+<script>
+
+  const spinnerwrapper=document.querySelector('.spinner-wrapper')
+  window.addEventListener('load',()=>{
+    setTimeout(()=>
+    {
+      spinnerwrapper.style.opacity='0';
+      spinnerwrapper.style.display='none';
+    },2000);
+    
+   
+  });
+  
+
+</script>
     
     
     <nav class="navbar navbar-expand-lg bg-dark">

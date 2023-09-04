@@ -199,7 +199,7 @@ def products(value):
     if value=='1':
         entry = client.entries({'content_type':"waterSoluble"})
         entries=entry
-        product_type='Water Soluble'
+        product_type='Water Soluble Complex Fertilisers'
     if value=='2':
         entry = client.entries({'content_type':"specialitywatersoluble"})
         entries=entry
